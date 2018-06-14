@@ -1,0 +1,210 @@
+ex00: OK | ex01: KO | ex02: Norme error | ex03: Does not compile | ex04: OK | ex05: Does not compile | ex06: Nothing turned in | ex07: Nothing turned in | ex08: Nothing turned in | ex09: Nothing turned in
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r6p16.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Sat Jun  2 21:20:30 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_13/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/g7/b8g0fzz56gqdndq101_vk4sm0000gp/T/tmpO7qmAp/user log --pretty='%H - %an, %ad : %s'
+5c902571f3051abeec4ad434980232a26280e444 - Simon Harris, Fri Jun 1 16:36:05 2018 -0700 : 05
+b9a17a5435cbfe9a3959d6d81a3b9e9a8b703892 - Simon Harris, Fri Jun 1 16:30:47 2018 -0700 : updating 02 03
+b83cf03952e530ab87827623427b13d4966bbd20 - Simon Harris, Fri Jun 1 16:18:30 2018 -0700 : 04 update; norm pass
+b5bb7912f62f3760242e1d18259eb1d4205fd78b - Simon Harris, Fri Jun 1 16:13:31 2018 -0700 : 04 sub
+b482be5d8f85b72de79bb280f052295b5f75c4c6 - Simon Harris, Fri Jun 1 16:03:34 2018 -0700 : fixing header 03
+14cbd082480a5c703fe5a31462d7b1d51f31708d - Simon Harris, Fri Jun 1 16:01:03 2018 -0700 : 00 - 03
+8dc29a5d12f6fd76d419bca4c6631735c4060656 - Simon Harris, Fri Jun 1 15:41:17 2018 -0700 : ex00
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/g7/b8g0fzz56gqdndq101_vk4sm0000gp/T/tmpO7qmAp/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2321 Jun  2 21:20 __GIT_HISTORY
+drwxr-xr-x  4 deepthought  deepthought   136 Jun  2 21:20 ex00
+drwxr-xr-x  4 deepthought  deepthought   136 Jun  2 21:20 ex01
+drwxr-xr-x  4 deepthought  deepthought   136 Jun  2 21:20 ex02
+drwxr-xr-x  4 deepthought  deepthought   136 Jun  2 21:20 ex03
+drwxr-xr-x  4 deepthought  deepthought   136 Jun  2 21:20 ex04
+drwxr-xr-x  4 deepthought  deepthought   136 Jun  2 21:20 ex05
+
+/var/folders/g7/b8g0fzz56gqdndq101_vk4sm0000gp/T/tmpO7qmAp/user/ex00:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1109 Jun  2 21:20 btree_create_node.c
+-rw-r--r--  1 deepthought  deepthought  1084 Jun  2 21:20 ft_btree.h
+
+/var/folders/g7/b8g0fzz56gqdndq101_vk4sm0000gp/T/tmpO7qmAp/user/ex01:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1103 Jun  2 21:20 btree_apply_prefix.c
+-rw-r--r--  1 deepthought  deepthought  1084 Jun  2 21:20 ft_btree.h
+
+/var/folders/g7/b8g0fzz56gqdndq101_vk4sm0000gp/T/tmpO7qmAp/user/ex02:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1099 Jun  2 21:20 btree_apply_infix.c
+-rw-r--r--  1 deepthought  deepthought  1084 Jun  2 21:20 ft_btree.h
+
+/var/folders/g7/b8g0fzz56gqdndq101_vk4sm0000gp/T/tmpO7qmAp/user/ex03:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1103 Jun  2 21:20 btree_apply_infix.c
+-rw-r--r--  1 deepthought  deepthought  1084 Jun  2 21:20 ft_btree.h
+
+/var/folders/g7/b8g0fzz56gqdndq101_vk4sm0000gp/T/tmpO7qmAp/user/ex04:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1359 Jun  2 21:20 btree_insert_data.c
+-rw-r--r--  1 deepthought  deepthought  1084 Jun  2 21:20 ft_btree.h
+
+/var/folders/g7/b8g0fzz56gqdndq101_vk4sm0000gp/T/tmpO7qmAp/user/ex05:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1313 Jun  2 21:20 btree_apply_prefix.c
+-rw-r--r--  1 deepthought  deepthought  1084 Jun  2 21:20 ft_btree.h
+
+= ex00 =========================================================================
+$> /usr/bin/norminette  ft_btree.h btree_create_node.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c btree_create_node.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./yg5xz883j72xx1x7gbl99juo "38yEu0GV5Q"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./6mkcwef5j26pp3e69v7uhkgo "JUbV9ZHoyO6"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./rmlh77xcdl8ubjn6z9iax7a2 "yk"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette  ft_btree.h btree_apply_prefix.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c btree_create_node.c btree_apply_prefix.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./2puavuvjatlf0egfddbqegpu "O7n" "j" "Ivsp5Vzl" "f" "2CYUbq0B" "y4EL" "blkKBqvpz" "iN6Y"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1   2018-06-02 21:20:37.000000000 -0700$
++++ test1.output        2018-06-02 21:20:37.000000000 -0700$
+@@ -1,8 +1,8 @@$
+-0$@^?$
+-%@^?$
+-$
+-%@^?$
+-%@^?$
+-$
+-$
+-$
++O7n$
++j$
++Ivsp5Vzl$
++f$
++2CYUbq0B$
++y4EL$
++blkKBqvpz$
++iN6Y$
+
+Diff KO :(
+Grade: 0
+
+= ex02 =========================================================================
+$> /usr/bin/norminette  btree_apply_infix.c ft_btree.h | grep -E '^(Error|Warning)'
+Error: 42 header not well formatted
+
+Norme check FAILED
+Grade: 0
+
+= ex03 =========================================================================
+$> /usr/bin/norminette  ft_btree.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c btree_create_node.c -o user_exe 
+Undefined symbols for architecture x86_64:
+  "_btree_apply_suffix", referenced from:
+      _main in main-a3f6d8.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+= ex04 =========================================================================
+$> /usr/bin/norminette  ft_btree.h btree_insert_data.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c btree_create_node.c btree_insert_data.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ix4qj6izppxiej9v4mnp3mhz "Bmv8rTC2eHt"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./xg02spebtete2hj0r62p8iez "Hg" "5gjoMV6D" "zd" "1ixM"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./sp7o6k6d332it78h9eyk6w2l "GWu2" "Q0vUPnMfcVg" "0nT"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./41lim9srjt8t9tfb38asuu6k "v4kPZ" "r" "m7LHIS" "cECgQxFqHWb" "wS1cJEZXh" "tWp2Efga0O9" "pFdHZEWq" "n" "Exz8BFbto0" "WbX8QLBCrJSA" "Rl2ba07gQ" "Ei4jJgL2p86" "x63VKl7rFHW" "U3"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./xp6p3474psxuinswty2sdga9 "rjpXc8DRK" "B2HNM" "C" "e458wzK" "M" "DNr2RjYW6" "Mp1vdFn8"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex05 =========================================================================
+$> /usr/bin/norminette  ft_btree.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c btree_create_node.c -o user_exe 
+Undefined symbols for architecture x86_64:
+  "_btree_search_item", referenced from:
+      _check_case in main-02e50e.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+= ex06 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex07 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex08 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex09 =========================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 10 ==============================================================

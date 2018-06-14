@@ -1,0 +1,230 @@
+ex01: OK | ex02: KO | ex03: KO | ex04: OK | ex05: KO | ex06: OK | ex07: OK | ex08: OK | ex09: OK | ex10: OK | ex11: OK
+
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r6p19.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Wed May 16 20:52:07 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_00/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user log --pretty='%H - %an, %ad : %s'
+465ccea5eb9ae4c766c0a4f8323394fc2bcf4c85 - Simon Harris, Tue May 15 01:11:28 2018 -0700 : Turning in exercises for the day, Rip my heart tomorrow
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  624 May 16 20:52 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex01
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex02
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex03
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex04
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex05
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex06
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex07
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex08
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex09
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex10
+drwxr-xr-x  3 deepthought  deepthought  102 May 16 20:52 ex11
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex01:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2048 May 16 20:52 testDay00.tar
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex02:
+total 16
+-rw-r--r--  1 deepthought  deepthought  6656 May 16 20:52 exo2.tar
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex03:
+total 8
+-rw-r--r--  1 deepthought  deepthought  71 May 16 20:52 klist.txt
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex04:
+total 8
+-rw-r--r--  1 deepthought  deepthought  53 May 16 20:52 who_am_i.sh
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex05:
+total 8
+-rw-r--r--  1 deepthought  deepthought  59 May 16 20:52 people.sh
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex06:
+total 8
+-rw-r--r--  1 deepthought  deepthought  115 May 16 20:52 mobile-phone.ldif
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex07:
+total 8
+-rw-r--r--  1 deepthought  deepthought  8 May 16 20:52 midLS
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex08:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2 May 16 20:52 z
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex09:
+total 8
+-rw-r--r--  1 deepthought  deepthought  538 May 16 20:52 b
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex10:
+total 8
+-rw-r--r--  1 deepthought  deepthought  63 May 16 20:52 clean
+
+/var/folders/dn/58scyw1n4bb22rntx4ljrq580000gp/T/tmpHOYdCk/user/ex11:
+total 8
+-rw-r--r--  1 deepthought  deepthought  22 May 16 20:52 ft_magic
+
+= ex01 =========================================================================
+Grade: 5
+
+= ex02 =========================================================================
+KO test3
+Grade: 0
+
+= ex03 =========================================================================
+Grade: 0
+
+= ex04 =========================================================================
+$> diff -U 3 user_output ref_output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex05 =========================================================================
+$> diff -U 3 user_output ref_output | cat -e
+--- user_output 2018-05-16 20:52:10.000000000 -0700$
++++ ref_output  2018-05-16 20:52:11.000000000 -0700$
+@@ -1,69 +0,0 @@$
+-Zura Razak$
+-Zolzaya Enkhbayar$
+-Zohid Ernazarov$
+-Zoes  Garidas$
+-Zoe Wong$
+-Zoe Rogers$
+-Zoe Ravitz-Dworkin$
+-Ziyuan Wu$
+-Ziyavudin Tinamagomedov$
+-Ziyao Peng$
+-Ziyan FENG$
+-Zixi Guo$
+-Ziwei Yu$
+-Zili Yin$
+-Zijian Wang$
+-Ziad Saber$
+-Zi Yuan$
+-Zi Wang Chen$
+-Zhuozhuo Liu$
+-Zhubin Zhai$
+-Zhongtuo Zhang$
+-Zhongdi Fu$
+-Zhipeng Wen$
+-Zhining  Qi$
+-Zhimin Ma$
+-Zhi hao Wang$
+-Zhengrong Hu$
+-Zhengda Shi$
+-Zhazel Kainarbekova$
+-Zhan Zhang$
+-Zhan Chen$
+-Zeyao Hu$
+-Zexi Wang$
+-Zerde Zhorabek$
+-Zelig Malamud$
+-Zeid Tisnes$
+-Zefu Li$
+-Zeeshan Sultan$
+-Zayn Alaoudi$
+-Zaydek MICHELS-GUALTIERI$
+-Zayaan Khan$
+-Zarnamanoj Thaker$
+-Zane Lanzer$
+-Zane Bruce$
+-Zan Zibert$
+-Zakariya AbdulHameed$
+-Zagir Aznaurov$
+-Zaf Sharapov$
+-Zack Spackman$
+-Zachery Pinard$
+-Zachary Yeo$
+-Zachary Stucke$
+-Zachary Smith$
+-Zachary Salas$
+-Zachary Patterson$
+-Zachary Patterson$
+-Zachary Kimelheim$
+-Zachary Keeler$
+-Zachary Keeler$
+-Zachary Hallera$
+-Zachary Hallera$
+-Zachary Hallera$
+-Zachary Findley$
+-Zachary Beasley$
+-Zachariah Cook$
+-Zach Witzel$
+-Zach Overhulser$
+-Zach Hoenes$
+-Zach  Gollwitzer$
+
+Diff KO :(
+Grade: 0
+
+= ex06 =========================================================================
+Grade: 10
+
+= ex07 =========================================================================
+$> sh ./test_midls.sh
+Grade: 10
+
+= ex08 =========================================================================
+$> diff -U 3 z ref_output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex09 =========================================================================
+$> diff -U 3 b 42b | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex10 =========================================================================
+$> sh ./test_clean.sh
+./test/#1#
+./test/1~
+./test/test/#2#
+./test/test/2~
+./test/test/titi/#4#
+./test/test/titi/4~
+./test/titi/#3#
+./test/titi/3~
+./test/titi/test/#5#
+./test/titi/test/5~
+ok
+
+Grade: 10
+
+= ex11 =========================================================================
+$> sh ./test_magic.sh
+-n testing ft_magic 1/2 ...
+< our file, > your file
+[OK]
+-n testing ft_magic 2/2 ...
+< our file, > your file
+[OK]
+
+Grade: 15
+
+= Final grade: 5 ===============================================================

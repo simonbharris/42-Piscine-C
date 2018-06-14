@@ -1,0 +1,196 @@
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: Does not compile | ex06: Timeout | ex07: Does not compile | ex08: Nothing turned in | ex09: Nothing turned in
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r2p42.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Sat May 19 15:33:50 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_03/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user log --pretty='%H - %an, %ad : %s'
+21448cd82e15b23f03793f8a1db0c8776f03ad8e - Simon Harris, Fri May 18 22:45:41 2018 -0700 : submitting d03
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  642 May 19 15:33 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 15:33 ex00
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 15:33 ex01
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 15:33 ex02
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 15:33 ex03
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 15:33 ex04
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 15:33 ex05
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 15:33 ex06
+drwxr-xr-x  3 deepthought  deepthought  102 May 19 15:33 ex07
+
+/var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user/ex00:
+total 8
+-rw-r--r--  1 deepthought  deepthought  952 May 19 15:33 ft_ft.c
+
+/var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user/ex01:
+total 8
+-rw-r--r--  1 deepthought  deepthought  994 May 19 15:33 ft_ultimate_ft.c
+
+/var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user/ex02:
+total 8
+-rw-r--r--  1 deepthought  deepthought  993 May 19 15:33 ft_swap.c
+
+/var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user/ex03:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1028 May 19 15:33 ft_div_mod.c
+
+/var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user/ex04:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1085 May 19 15:33 ft_ultimate_div_mod.c
+
+/var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user/ex05:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1011 May 19 15:33 ft_putstr.c
+
+/var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user/ex06:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1009 May 19 15:33 ft_strlen.c
+
+/var/folders/r4/j43sj10s1_q9jr20tzwhmtqm0000gp/T/tmpe2YwCl/user/ex07:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1113 May 19 15:33 ft_strrev.c
+
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_ft.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_ft.c ft_putchar.c test_ft_ft.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./1zy7gmk0hnf27nrpnf08xjhw
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_ultimate_ft.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_ultimate_ft.c ft_putchar.c test_ft_ultimate_ft.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./av3aypltz77z6tymh0b3yjg6
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_swap.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_swap.c main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./oe1o6xrtc2jmyhaaf7ccc893
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_div_mod.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putchar.c ft_div_mod.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./1dve3qqg5q2wre00f1qogzac
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_ultimate_div_mod.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_ultimate_div_mod.c main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./8rkk65nk14zo0a4e5vnpjwj6
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putstr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_putstr.c ft_putchar.c ft_putstr.c -o user_exe 
+ft_putstr.c:21:3: error: implicit declaration of function 'ft_putchar' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+                ft_putchar(str[i]);
+                ^
+ft_putstr.c:21:3: note: did you mean 'ft_putstr'?
+ft_putstr.c:15:6: note: 'ft_putstr' declared here
+void    ft_putstr(char *str)
+        ^
+ft_putstr.c:19:13: error: variable 'i' is uninitialized when used here [-Werror,-Wuninitialized]
+        while (str[i] != '\0')
+                   ^
+ft_putstr.c:17:7: note: initialize the variable 'i' to silence this warning
+        int i;
+             ^
+              = 0
+2 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= ex06 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlen.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlen.c main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./qyoot84bygcc6c4o2dkg3od6
+Command './qyoot84bygcc6c4o2dkg3od6' timed out after 10 seconds
+Grade: 0
+
+= ex07 =========================================================================
+$> gcc -Wextra -Wall -Werror ft_strrev.c main.c ft_putchar.c -o user_exe 
+ft_strrev.c:21:13: error: variable 'len' is uninitialized when used here [-Werror,-Wuninitialized]
+        while (str[len] != '\0')
+                   ^~~
+ft_strrev.c:18:10: note: initialize the variable 'len' to silence this warning
+        int             len;
+                           ^
+                            = 0
+ft_strrev.c:23:9: error: variable 'i' is uninitialized when used here [-Werror,-Wuninitialized]
+        while (i <= len)
+               ^
+ft_strrev.c:17:8: note: initialize the variable 'i' to silence this warning
+        int             i;
+                         ^
+                          = 0
+2 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= ex08 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex09 =========================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 30 ==============================================================

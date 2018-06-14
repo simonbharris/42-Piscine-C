@@ -1,0 +1,182 @@
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: Does not compile | ex05: Does not compile | ex06: OK | ex07: Does not compile
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r5p40.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri May 18 23:31:40 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_02/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user log --pretty='%H - %an, %ad : %s'
+c529a419ec50e09af98549a7b26fe5483e5d651b - Simon Harris, Thu May 17 23:41:36 2018 -0700 : Making it clear that 07 is not intended to be functional
+e122e572d6efa2b44d873d3e938be6210e80e062 - Simon Harris, Thu May 17 23:37:29 2018 -0700 : Added prototypes for required functions
+7a00a5941de5b62e089220d5c4d3e9241809fd7c - Simon Harris, Thu May 17 20:15:41 2018 -0700 : Updating files with email
+5b9f069afbadd3e2c9740e67d91b091fea9b5aec - Simon Harris, Thu May 17 16:29:27 2018 -0700 : ex00 through ex06. only w/ function and ft_putchar prototype, passes norm
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2246 May 18 23:31 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 May 18 23:31 ex00
+drwxr-xr-x  3 deepthought  deepthought   102 May 18 23:31 ex01
+drwxr-xr-x  3 deepthought  deepthought   102 May 18 23:31 ex02
+drwxr-xr-x  3 deepthought  deepthought   102 May 18 23:31 ex03
+drwxr-xr-x  3 deepthought  deepthought   102 May 18 23:31 ex04
+drwxr-xr-x  3 deepthought  deepthought   102 May 18 23:31 ex05
+drwxr-xr-x  3 deepthought  deepthought   102 May 18 23:31 ex06
+drwxr-xr-x  3 deepthought  deepthought   102 May 18 23:31 ex07
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user/ex00:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1065 May 18 23:31 ft_print_alphabet.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user/ex01:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1062 May 18 23:31 ft_print_reverse_alphabet.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user/ex02:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1048 May 18 23:31 ft_print_numbers.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user/ex03:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1033 May 18 23:31 ft_is_negative.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user/ex04:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1273 May 18 23:31 ft_print_comb.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user/ex05:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1287 May 18 23:31 ft_print_comb2.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user/ex06:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1218 May 18 23:31 ft_putnbr.c
+
+/var/folders/6w/4g4jdstd5gzd7_4l5tqk56tr0000gp/T/tmp5nNnqq/user/ex07:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2882 May 18 23:31 ft_print_combn.c.a_desperate_try
+
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_alphabet.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_alphabet.c ft_putchar.c ft_print_alphabet.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./q4p0xmk716ydz8w2h7g9z0mn
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_reverse_alphabet.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_reverse_alphabet.c ft_putchar.c ft_print_reverse_alphabet.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./0bxka3ul4uoy84xbwp7c4j70
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_numbers.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_numbers.c ft_putchar.c ft_print_numbers.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./jn2ctupatvwv6cd2j6lfdzqb
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_is_negative.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_is_negative.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./g0gbgdbxz5cvc509rexxz3l5
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_comb.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb.c ft_print_comb.c ft_putchar.c -o user_exe 
+ft_print_comb.c:22:9: error: variable 'i' is uninitialized when used here [-Werror,-Wuninitialized]
+        while (i < 8)
+               ^
+ft_print_comb.c:18:7: note: initialize the variable 'i' to silence this warning
+        int i;
+             ^
+              = 0
+1 error generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_comb2.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb2.c ft_print_comb2.c ft_putchar.c -o user_exe 
+ft_print_comb2.c:21:9: error: variable 'i' is uninitialized when used here [-Werror,-Wuninitialized]
+        while (i < 100)
+               ^
+ft_print_comb2.c:18:7: note: initialize the variable 'i' to silence this warning
+        int i;
+             ^
+              = 0
+1 error generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= ex06 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putnbr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putnbr.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./yv3d2b9lbf5ef262pov3vgvm
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex07 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader  | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_putchar.c test_ft_print_combn.c -o user_exe 
+Undefined symbols for architecture x86_64:
+  "_ft_print_combn", referenced from:
+      _main in test_ft_print_combn-5640d1.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 35 ==============================================================

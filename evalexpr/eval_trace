@@ -1,0 +1,105 @@
+ex00: Test 6 KO
+Grade: 70 / 100
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r11p8.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Mon Jun  4 20:23:24 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_evalexpr/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/th/47dtffy17rlchbf13351h4yh0000gp/T/tmpyLHzzM/user log --pretty='%H - %an, %ad : %s'
+cc65cab0e624908763dd339a7db6e249efbc8b26 - Simon Harris, Sun Jun 3 19:33:27 2018 -0700 : Norm pass, "valid" arguments match bc in what I could test.
+e375fc6b6d2f9339db3b7ce516a4fd36804fad83 - Simon Harris, Sun Jun 3 18:00:09 2018 -0700 : ex00 appears to work, going to try some edge cases (no nomr)
+5ff46c63adab6bad34ca2d87b67fe253c39a1090 - Simon Harris, Sun Jun 3 14:21:09 2018 -0700 : initial submit, still needs fixing
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/th/47dtffy17rlchbf13351h4yh0000gp/T/tmpyLHzzM/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1265 Jun  4 20:23 __GIT_HISTORY
+drwxr-xr-x  5 deepthought  deepthought   170 Jun  4 20:23 ex00
+
+/var/folders/th/47dtffy17rlchbf13351h4yh0000gp/T/tmpyLHzzM/user/ex00:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1137 Jun  4 20:23 Makefile
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  4 20:23 includes
+drwxr-xr-x  6 deepthought  deepthought   204 Jun  4 20:23 srcs
+
+/var/folders/th/47dtffy17rlchbf13351h4yh0000gp/T/tmpyLHzzM/user/ex00/includes:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1129 Jun  4 20:23 ft.h
+
+/var/folders/th/47dtffy17rlchbf13351h4yh0000gp/T/tmpyLHzzM/user/ex00/srcs:
+total 32
+-rw-r--r--  1 deepthought  deepthought  2420 Jun  4 20:23 eval_expr.c
+-rw-r--r--  1 deepthought  deepthought   967 Jun  4 20:23 ft_putchar.c
+-rw-r--r--  1 deepthought  deepthought  1165 Jun  4 20:23 ft_putnbr.c
+-rw-r--r--  1 deepthought  deepthought  1037 Jun  4 20:23 main.c
+
+= ex00 =========================================================================
+$> /usr/bin/norminette  srcs/main.c srcs/ft_putchar.c srcs/eval_expr.c includes/ft.h srcs/ft_putnbr.c | grep -E '^(Error|Warning)'
+
+$> make && ls -la eval_expr
+gcc -Wall -Wextra -Werror -o eval_expr ./srcs/eval_expr.c ./srcs/ft_putchar.c ./srcs/ft_putnbr.c ./srcs/main.c
+-rwxr-xr-x  1 deepthought  deepthought  8792 Jun  4 20:23 eval_expr
+
+= Test 1 ===================================================
+$> ./j8w47dmvkjny37amen9fpr7r "68 - 13"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+OK, incrementing grade by 5
+= Test 2 ===================================================
+$> ./0jsi39mzl0cr4xdo4itt2o53 "95 - 26 * 62 % 5"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+OK, incrementing grade by 20
+= Test 3 ===================================================
+$> ./5spx163chx3p5iwx4fuzx4d1 "78 + 39 * (92 - 14 * (48 - 28) + 31 % 58) + 37"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+OK, incrementing grade by 10
+= Test 4 ===================================================
+$> ./ndgv1mgdqdzlclf7wm4ez8d4 "0"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+OK, incrementing grade by 10
+= Test 5 ===================================================
+$> ./e00zu2uztqikfk7q7ocx8u3s "-18"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+OK, incrementing grade by 20
+= Test 6 ===================================================
+$> ./1eawgk2ayj30n4uz3gkzpnnu "22-40"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+--- user_output_test6   2018-06-04 20:23:30.000000000 -0700$
++++ test6.output        2018-06-04 20:23:30.000000000 -0700$
+@@ -1 +1 @@$
+--2240$
++-18$
+
+Diff KO :(
+KO
+Grade: 65
+
+= Final grade: 65 ==============================================================

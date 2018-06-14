@@ -1,0 +1,215 @@
+ex01: KO | ex02: OK | ex03: OK | ex04: KO | ex05: OK | ex06: OK | ex07: KO | ex08: KO | ex09: KO
+
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r5p41.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Thu May 17 15:58:43 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_01/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user log --pretty='%H - %an, %ad : %s'
+eab0eff5d7fae937c134eb228f8fab1a3a27e4f6 - Simon Harris, Wed May 16 23:02:55 2018 -0700 : Merge branch 'master' of vgs.42.us.org:intra/2018/activities/piscine_c_day_01/sharris
+a2927cb1e49846b9f2604f046c3be5df99fc8d33 - Simon Harris, Wed May 16 22:59:38 2018 -0700 : double checking and adding chmod
+bd35e53d63fdf831e111d2742171026210178be1 - Simon Harris, Wed May 16 15:06:50 2018 -0700 : removing junk file
+0513a9794a3be85f89a60bfc8799bd4ecd6813cb - Simon Harris, Wed May 16 02:03:58 2018 -0700 : Throwing in the sands of time (edit ex05 time)
+6200dab3bbb810f68efa5d20de2bec9e65990a30 - Simon Harris, Wed May 16 01:50:40 2018 -0700 : step 1 change KwaMe's time
+f562d4e609b9b30ee11934a7ec7abe535ad20d7a - Simon Harris, Tue May 15 21:55:22 2018 -0700 : correction on 09
+d038abdedd098035f04794d9e85d1b27ddca4a85 - Simon Harris, Tue May 15 21:09:20 2018 -0700 : I'M A BASE MASTER
+404abcbf280b985e3b52a9e12a21545524381368 - Simon Harris, Tue May 15 17:36:26 2018 -0700 : Committing work before lunch
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2532 May 17 15:58 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 May 17 15:58 ex01
+drwxr-xr-x  3 deepthought  deepthought   102 May 17 15:58 ex02
+drwxr-xr-x  3 deepthought  deepthought   102 May 17 15:58 ex03
+drwxr-xr-x  3 deepthought  deepthought   102 May 17 15:58 ex04
+drwxr-xr-x  3 deepthought  deepthought   102 May 17 15:58 ex05
+drwxr-xr-x  3 deepthought  deepthought   102 May 17 15:58 ex06
+drwxr-xr-x  3 deepthought  deepthought   102 May 17 15:58 ex07
+drwxr-xr-x  3 deepthought  deepthought   102 May 17 15:58 ex08
+drwxr-xr-x  3 deepthought  deepthought   102 May 17 15:58 ex09
+
+/var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user/ex01:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  31 May 17 15:58 print_groups.sh
+
+/var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user/ex02:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  63 May 17 15:58 find_sh.sh
+
+/var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user/ex03:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  40 May 17 15:58 count_files.sh
+
+/var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user/ex04:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  36 May 17 15:58 MAC.sh
+
+/var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user/ex05:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  2 May 17 15:58 "\?$*'KwaMe'*$?\"
+
+/var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user/ex06:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  19 May 17 15:58 skip.sh
+
+/var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user/ex07:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  162 May 17 15:58 r_dwssap.sh
+
+/var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user/ex08:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  73 May 17 15:58 bon.sh
+
+/var/folders/vw/wkwfv46d0kq_9938_3kw1nfh0000gp/T/tmpdip7bT/user/ex09:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  243 May 17 15:58 add_chelous.sh
+
+= ex01 =========================================================================
+===========
+testing
+nobody,everyone,localaccounts,1,_lpoperator
+VS
+nobody,everyone,localaccounts,1,_lpoperator
+
+===========
+< le notre, > le votre
+1c1
+< nobody,everyone,localaccounts,1,_lpoperator
+\ No newline at end of file
+---
+> nobody,everyone,localaccounts,1,_lpoperator
+
+KO for nobody user
+
+Grade: 0
+
+= ex02 =========================================================================
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex03 =========================================================================
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex04 =========================================================================
+===========
+testing
+38:c9:86:56:cc:5c
+28:f0:76:4a:a0:5e
+1a:00:02:03:1e:a0
+1a:00:02:03:1e:a1
+1a:00:02:03:1e:a0
+0a:f0:76:4a:a0:5e
+46:6c:dd:75:29:86
+
+VS
+38:c9:86:56:cc:5c 
+28:f0:76:4a:a0:5e 
+1a:00:02:03:1e:a0 
+1a:00:02:03:1e:a1 
+1a:00:02:03:1e:a0 
+0a:f0:76:4a:a0:5e 
+46:6c:dd:75:29:86 
+
+===========
+< le notre, > le votre
+1,7c1,7
+< 38:c9:86:56:cc:5c
+< 28:f0:76:4a:a0:5e
+< 1a:00:02:03:1e:a0
+< 1a:00:02:03:1e:a1
+< 1a:00:02:03:1e:a0
+< 0a:f0:76:4a:a0:5e
+< 46:6c:dd:75:29:86
+---
+> 38:c9:86:56:cc:5c 
+> 28:f0:76:4a:a0:5e 
+> 1a:00:02:03:1e:a0 
+> 1a:00:02:03:1e:a1 
+> 1a:00:02:03:1e:a0 
+> 0a:f0:76:4a:a0:5e 
+> 46:6c:dd:75:29:86 
+
+KO
+
+
+Grade: 0
+
+= ex05 =========================================================================
+-rwxr-xr-x  1 deepthought  deepthought  2 May 17 15:58 "\?$*'KwaMe'*$?\"
+OK
+
+Grade: 10
+
+= ex06 =========================================================================
+ok
+
+Grade: 10
+
+= ex07 =========================================================================
+< our file, > your file
+1c1
+< wpegnahc_brk_, tsafbrk_, toor, tnegaytiruces_, tneganoitaulavetsurt_, thgiltops_, tgtbrk_brk_, tgtbrk_, tessaelibom_, suryc_, suomynona_brk_, stneveelppa_, srotcetedatad_, secivresnoci_.
+\ No newline at end of file
+---
+> _webauthserver, _warmd, _uucp, _usbmuxd, _trustevaluationagent, _timed, _teamsserver, _svn, _sshd, _spotlight, _softwareupdate, _serialnumberd, _securityagent, _scsd.
+KO with 3 and 16
+
+Grade: 0
+
+= ex08 =========================================================================
+SASL/GSSAPI authentication started
+ldap_sasl_interactive_bind_s: Local error (-2)
+        additional info: SASL(-1): generic failure: GSSAPI Error:  Miscellaneous failure (see text (No credentials cache file found)
+===========
+testing
+0
+
+VS
+8
+
+===========
+< le notre, > le votre
+1c1
+< 0
+---
+> 8
+
+KO for root user
+
+Grade: 0
+
+= ex09 =========================================================================
+1,3d0
+< Segmentation fault
+< Salut
+< uigau 
+KO
+
+Grade: 0
+
+= Final grade: 0 ===============================================================

@@ -1,0 +1,139 @@
+ex00: KO | ex01: OK | ex02: Nothing turned in | ex03: Nothing turned in | ex04: Nothing turned in
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r13p4.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Fri Jun  1 01:02:56 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_12/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/t4/r4yh0mk56rng8kgpcm2lb1h00000gp/T/tmpaHd76v/user log --pretty='%H - %an, %ad : %s'
+e4334bf1c9f08c6e361b4814be679406d9df002e - Simon Harris, Thu May 31 23:19:44 2018 -0700 : norm pass
+bf3d695258788d5dcb800582a48073845a30f852 - Simon Harris, Thu May 31 22:55:40 2018 -0700 : adding iloop on cat for certain cases
+b8946a2b10ec54e39de7380bb86b30d1e2a1a15f - Simon Harris, Thu May 31 22:26:18 2018 -0700 : 01 fixing directory err
+863f469bda4f19eeeef3767fb15eb714e45d9cdc - Simon Harris, Thu May 31 21:54:17 2018 -0700 : 05 small fix
+a5e40442654c12c5dd9529eed7ccc7bf700075a7 - Simon Harris, Thu May 31 21:51:40 2018 -0700 : Squee 01!
+c0c727cc01d471f219198d493bf3fa2a6f8caa15 - Simon Harris, Thu May 31 20:27:57 2018 -0700 : 00 push
+23cc2014c521cf8e83805707a0c1091296afaca6 - Simon Harris, Thu May 31 18:32:49 2018 -0700 : 00 submission
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/t4/r4yh0mk56rng8kgpcm2lb1h00000gp/T/tmpaHd76v/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2509 Jun  1 01:02 __GIT_HISTORY
+drwxr-xr-x  6 deepthought  deepthought   204 Jun  1 01:02 ex00
+drwxr-xr-x  6 deepthought  deepthought   204 Jun  1 01:02 ex01
+
+/var/folders/t4/r4yh0mk56rng8kgpcm2lb1h00000gp/T/tmpaHd76v/user/ex00:
+total 24
+-rw-r--r--  1 deepthought  deepthought  1189 Jun  1 01:02 Makefile
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  1 01:02 includes
+-rw-r--r--  1 deepthought  deepthought  6280 Jun  1 01:02 libft.a
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  1 01:02 srcs
+
+/var/folders/t4/r4yh0mk56rng8kgpcm2lb1h00000gp/T/tmpaHd76v/user/ex00/includes:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1159 Jun  1 01:02 ft.h
+
+/var/folders/t4/r4yh0mk56rng8kgpcm2lb1h00000gp/T/tmpaHd76v/user/ex00/srcs:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1483 Jun  1 01:02 ft_display_file.c
+
+/var/folders/t4/r4yh0mk56rng8kgpcm2lb1h00000gp/T/tmpaHd76v/user/ex01:
+total 24
+-rw-r--r--  1 deepthought  deepthought  1178 Jun  1 01:02 Makefile
+drwxr-xr-x  3 deepthought  deepthought   102 Jun  1 01:02 includes
+-rw-r--r--  1 deepthought  deepthought  6280 Jun  1 01:02 libft.a
+drwxr-xr-x  4 deepthought  deepthought   136 Jun  1 01:02 srcs
+
+/var/folders/t4/r4yh0mk56rng8kgpcm2lb1h00000gp/T/tmpaHd76v/user/ex01/includes:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1220 Jun  1 01:02 ft.h
+
+/var/folders/t4/r4yh0mk56rng8kgpcm2lb1h00000gp/T/tmpaHd76v/user/ex01/srcs:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1406 Jun  1 01:02 ft_cat.c
+-rw-r--r--  1 deepthought  deepthought  1340 Jun  1 01:02 ft_cat_err.c
+
+= ex00 =========================================================================
+$> /usr/bin/norminette  srcs/ft_display_file.c includes/ft.h | grep -E '^(Error|Warning)'
+
+$> make clean && make && make fclean && make && make clean && ls -la ft_display_file
+make: Nothing to be done for `clean'.
+make: Nothing to be done for `clean'.
+-rwxr-xr-x  1 deepthought  deepthought  8796 Jun  1 01:02 ft_display_file
+
+= Test 1 ===================================================
+$> ./gvgka3bqo6ga9s2b16i7jm5r 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+Binary files user_output_test1 and test1.output differ$
+
+Diff KO :(
+Grade: 0
+
+= ex01 =========================================================================
+$> /usr/bin/norminette  srcs/ft_cat_err.c includes/ft.h srcs/ft_cat.c | grep -E '^(Error|Warning)'
+
+$> make clean && make && make fclean && make && make clean && ls -la ft_cat
+make: Nothing to be done for `clean'.
+gcc -Wall -Wextra -Werror ./srcs/ft_cat.c ./srcs/ft_cat_err.c -L. -lft -o ft_cat
+/bin/rm -f ft_cat
+gcc -Wall -Wextra -Werror ./srcs/ft_cat.c ./srcs/ft_cat_err.c -L. -lft -o ft_cat
+make: Nothing to be done for `clean'.
+-rwxr-xr-x  1 deepthought  deepthought  8924 Jun  1 01:03 ft_cat
+
+= Test 1 ===================================================
+$> ./wn92jjdmfz7801ntcuf4gnk6 abczaopfkjzemlgijez
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./wh4wwrpv6ruem18vd5cyan1z abczaopfkjzemlgijez hyper_file.txt tozi hyper_file2.txt hyper_file.txt tozi hyper_file2.txt hyper_file.txt tozi hyper_file2.txt hyper_file.txt tozi hyper_file2.txt hyper_file.txt tozi hyper_file2.txt hyper_file.txt tozi hyper_file2.txt
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./kyz9hlixww2b9pi9urt8dhuc hyper_file.txt
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./ofs7vuj0of7giw6tkc4f5amb b b b b b b b b
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./r33m3fstmtglohhlloj8169a hyper_file.txt hyper_file2.txt hyper_file3.txt
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex02 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex03 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex04 =========================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

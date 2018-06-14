@@ -1,0 +1,287 @@
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: Nothing turned in | ex07: Nothing turned in
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r5p23.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Fri May 25 16:37:54 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_07/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/93/lq3qfdv542xd_rbyct7l2q6m0000gp/T/tmpnbK1xF/user log --pretty='%H - %an, %ad : %s'
+e57dda715c123f0f275117866200c059f3457862 - Simon Harris, Thu May 24 22:18:05 2018 -0700 : changing email in header
+7d0680d850290300cca23a869a6d41def9037016 - Simon Harris, Thu May 24 20:22:58 2018 -0700 : another towel check 05
+ff0bd19943c9e76431867619e58bd6ab5768be32 - Simon Harris, Thu May 24 20:20:33 2018 -0700 : submitting 05 norm pass
+3387481609366c240d17df67462b8304d5121c23 - Simon Harris, Thu May 24 19:44:37 2018 -0700 : fixing something that skips pass towel 04, extra wc when ending string w/ letter
+d058699975da703ce3c29536a386c9c9ce40d071 - Simon Harris, Thu May 24 19:39:48 2018 -0700 : fixing 04 again
+4d2c69c9896f228446e23ab94a806ea086992b08 - Simon Harris, Thu May 24 19:33:40 2018 -0700 : 04 corrections
+1a5ee27056e609d14dd3f64d614fe19be1be27dd - Simon Harris, Thu May 24 19:04:30 2018 -0700 : renaming 04 to correct name
+d4976087234cc36852f04f47f8ada99d915d9064 - Simon Harris, Thu May 24 19:02:46 2018 -0700 : submitting 04, I think it's broken; not sure how to stop it with iterator
+cdeff23815f42749d9a082c6310d2b6e9848f04f - Simon Harris, Thu May 24 17:34:15 2018 -0700 : another attempt to fix null return
+314dcf04ced4156782cca82259ba401c1c3d7b94 - Simon Harris, Thu May 24 16:40:53 2018 -0700 : fixin 03 pt 2
+7cf764b7bd086e7133a4e02e07710a64a8fda968 - Simon Harris, Thu May 24 16:39:18 2018 -0700 : ex 03 fixing null return
+ac277cbe4b854decdbcbec91ccd299449abfd787 - Simon Harris, Thu May 24 16:38:42 2018 -0700 : 03 fixing null returns/
+94deb9d84f4f1045291d6ad7a7b4d004eabdb2d3 - Simon Harris, Thu May 24 16:36:33 2018 -0700 : returning empty string on no params 03
+be0b98a016c7f8c4b5e1c13e14b5e9f9bf80778b - Simon Harris, Thu May 24 16:29:37 2018 -0700 : trying to remove an extra \n 03
+be47f6c875244742bf268e82087ee1ca34c4ceca - Simon Harris, Thu May 24 16:19:06 2018 -0700 : 00 norm fixes
+a9c8fc53b602536dff545f84c1fa2573312fae15 - Simon Harris, Thu May 24 16:17:03 2018 -0700 : adjusting malloc in 00, and submitting 03
+c43400cb7b3724d8d542f045a7e5b4d429448d94 - Simon Harris, Thu May 24 02:56:56 2018 -0700 : 02 submission, passed norm
+fba65be30393b0804f435566efee0a0bc48fe4de - Simon Harris, Thu May 24 01:36:40 2018 -0700 : assigning range 0 if error 02
+d6524c4e60b7f38985daf8330443ac10b0f5cc1e - Simon Harris, Thu May 24 01:32:36 2018 -0700 : 02 correction
+98108a18ab7c39bdc709f7dd5fca64c0b64062b3 - Simon Harris, Thu May 24 01:27:07 2018 -0700 : maybe now?
+b0c7c8dec17bb372ed521d2188030f986e0de2a1 - Simon Harris, Thu May 24 01:25:46 2018 -0700 : 02 isn't this easy is it?
+93fb0407e22b15ee801eddb182ea6f58ec6867da - Simon Harris, Wed May 23 23:16:44 2018 -0700 : adjusting 01 pass norm
+c0f9c42d67a345402e3998816313246c39126561 - Simon Harris, Wed May 23 21:27:00 2018 -0700 : removing include headers and norm pass 01
+0801af0c88542ca3937e824b415f3589018a20bc - Simon Harris, Wed May 23 21:23:43 2018 -0700 : initial 00 01 submission
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/93/lq3qfdv542xd_rbyct7l2q6m0000gp/T/tmpnbK1xF/user
+total 16
+-rw-r--r--  1 deepthought  deepthought  6492 May 25 16:37 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 May 25 16:37 ex00
+drwxr-xr-x  3 deepthought  deepthought   102 May 25 16:37 ex01
+drwxr-xr-x  3 deepthought  deepthought   102 May 25 16:37 ex02
+drwxr-xr-x  3 deepthought  deepthought   102 May 25 16:37 ex03
+drwxr-xr-x  3 deepthought  deepthought   102 May 25 16:37 ex04
+drwxr-xr-x  3 deepthought  deepthought   102 May 25 16:37 ex05
+
+/var/folders/93/lq3qfdv542xd_rbyct7l2q6m0000gp/T/tmpnbK1xF/user/ex00:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1160 May 25 16:37 ft_strdup.c
+
+/var/folders/93/lq3qfdv542xd_rbyct7l2q6m0000gp/T/tmpnbK1xF/user/ex01:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1154 May 25 16:37 ft_range.c
+
+/var/folders/93/lq3qfdv542xd_rbyct7l2q6m0000gp/T/tmpnbK1xF/user/ex02:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1246 May 25 16:37 ft_ultimate_range.c
+
+/var/folders/93/lq3qfdv542xd_rbyct7l2q6m0000gp/T/tmpnbK1xF/user/ex03:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1702 May 25 16:37 ft_concat_params.c
+
+/var/folders/93/lq3qfdv542xd_rbyct7l2q6m0000gp/T/tmpnbK1xF/user/ex04:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2132 May 25 16:37 ft_split_whitespaces.c
+
+/var/folders/93/lq3qfdv542xd_rbyct7l2q6m0000gp/T/tmpnbK1xF/user/ex05:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1238 May 25 16:37 ft_print_words_tables.c
+
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strdup.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strdup.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./w7vt96dw9f9d76iar8krw5jo
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_range.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_range.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./fslz0th22ta77aobodtaxf4f
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_ultimate_range.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_ultimate_range.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./m10n0w8gt6i36tlgkgp4meop
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_concat_params.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_concat_params.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./kbm1ctuncx19hv1a7wshtjzr 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./5orrqtwnkmy6xylcthroj3lv "wyCzL"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./8xrpwp0p95r8tyg26y4u9npm "OAhSy1CHWFo9DR0"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./7euocftplzbkwoekndvk3xuu "cZsaNx3ugwW scHxOoern9 owzHYld6195n JA6UHVXSqjG qrjDeB8kQbuf U07rQDgGepI aXzPCIgMLN 6CB3A4N"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./klaf0s1ugmsg1m0f6n2kjeaa "hkFpRUZ XaPZcb8WRyOt WIN0 VPKhoEv 6Ku3JFvgM P8ysJAtrIc"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./zah7cc50xrwlqas4pmauwt4u "l9wZfK4ik7O" "Ts30LRq" "b" "D1ImHq0" "XiGoY7K" "x" "Y7" "u" "J" "K" "291ejanF"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./vkuspjaisn2pir2wbexppxcb "6jzmgQSBu" "qenK" "vz3YEtT" "n4hBkKGmdea" "xF" "U0NQG4OeM" "rUmbLO" "gHQ" "NM" "jLew6uK"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./vt7quxzm7ee7dkeapdrrycer "WgUSDYy4zvK" "ISa7kd" "mocijUkV5bP nfcQsD9ugRpX JiKsjBY486dl rPn5MY2exZmN" "D 4Ip MGps" "kgBInd9 UpnsitJrB" "Y3xinQo zS1A9nYqGxit" "6"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./zny6l5zkbtw6o043fuc3k8ph "Fz f4EAmBD ecvrA8" "npmcs qMp kIo5" "SIzGcWu pJA486O0w9Ne GTrmV 0VFBgqS" "zQyJdGgUl6Io" "jcywPg" "eXn" "s1zVDKQ" "IaJcHm ePoAE" "7Ct0k9hascMe Xepn OfBAvCtD oDfOaAZpXrkt" "xPusa91fNpCJ It6cOTlsCB YcNvhUSq qQOw2"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_split_whitespaces.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_split_whitespaces.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./12s426xjup5a0preknubmzcn "         "
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./8krg51vbp2cjbezxafmpqaz6 "                         "
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./cw1lmlv4v79f63c7ostmjim3 "         OMx28t                  "
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./wea1euh5f654h7qxiqfa2bds "         mxARFVGNZ               "
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./xqktldvgyaghmxcfbpuro58w "         ebDpA           "
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./f5727jp9tt74rhqm30vrs3d5 "lyCeg             JqtyiR0                 pvreKi83                Ze2dtE7                 3VvPE8JD5               RxMthe64SDk7            7PgH9jZhW"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./goqhbgp1sz8dvsl1fw7yfnf5 "sUGZ3bxQhzyL              SIOPET0                 3lvrp           321Go"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./n17worqjwjqmexr47aajz5cb "5PSufEg8J                 mjAhr           fOX7            MOflp5mch1              gf7Hu           fD"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./35xae4etil65d1p63cb6tu28 "unOgIxieC5Q               3untqPrC5               Q1dwTuR3542s"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_words_tables.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putchar.c ft_print_words_tables.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./j41eg6n9lhqn5p0su28fso3f "                 "
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./5mu8me9jbiewz0gl7mpwdmbm "                                         "
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./i6mcj5vz52lvbwhpieq1rozv "         HpXQA47                 "
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./z3hqc2khcaq9zax1hxi5jfbw "         pBuDqsKL9               "
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./wyiuzpu9rd10iz9bevo2zkti "         hp4VWgikG               "
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./wrchvo2m8oetq628gymg0xk0 "Mxp               hY4cb           AO              P               B               CTadruEm3wL0"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./9e2wgny8mhx3laxjdsukycm9 "dJ8WlkPHCp                fSxKnb                  FcgSw5ufNkl1            NhSitena6AH             ASqLcZXQF2"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./qw0yjq9o43p9hi8hic5inrcv "xhIOQ89n                  nTxMhLR                 LcZ6Q           2NFWlO                  BYZb            ClxYHcJmnVW"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./f20mumc8jkwp3ghmqh5j7dx9 "RHzNSPZ2CT                x               rB              hEs0mWwHpagP            zauwfD5X1"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex06 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex07 =========================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 60 ==============================================================

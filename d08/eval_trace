@@ -1,0 +1,311 @@
+ex00: OK | ex01: Does not compile | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: Norme error
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r5p23.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Sat May 26 14:40:26 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_08/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/t0/shs4grbn6jx7xrhmy9mnjz540000gp/T/tmprAb4bw/user log --pretty='%H - %an, %ad : %s'
+ba4a58ad112e553b4bc39b6a154f069698784bcd - Simon Harris, Fri May 25 16:40:24 2018 -0700 : fixing ex00 malloc
+952a34dffb95301f5ea26148dd377ac60eea2062 - Simon Harris, Fri May 25 04:19:19 2018 -0700 : 06 more changes
+58f7e41c0b0f36a5051e07b98722b5b00f81a293 - Simon Harris, Fri May 25 04:18:00 2018 -0700 : 06 adding new lines on null
+fc32487baf8693131a262c4ca62345d66ffc8aa9 - Simon Harris, Fri May 25 04:16:42 2018 -0700 : 06 v3
+b547dc97120050853374489ca256b6cf43584e39 - Simon Harris, Fri May 25 03:48:38 2018 -0700 : 06 updatev2
+d2f15c554d86b15dc315de0359f087de1d716870 - Simon Harris, Fri May 25 03:37:01 2018 -0700 : 06 update prototypes
+9ee64d2976963c896f8d80d820fb66879e4b265c - Simon Harris, Fri May 25 03:35:22 2018 -0700 : 06 include
+bb89f1671bc07d0dc2392a9e6d2e836e13ccb0d0 - Simon Harris, Fri May 25 03:33:44 2018 -0700 : 06 update removing putchar implementation
+cfb23757f6ca749ed8cbf7105a6c06b6fd734a0e - Simon Harris, Fri May 25 03:32:58 2018 -0700 : 06 update
+83f5390907671ae28178c1291f4b55e9e6684ed9 - Simon Harris, Fri May 25 03:30:31 2018 -0700 : removing junk from 05; submitting 06
+698a0f20d046facb37eef24f2cbd9e37e31d2309 - Simon Harris, Fri May 25 02:50:32 2018 -0700 : 05 update
+63c309f915281a20098a1ac0c314b8fcc58421b4 - Simon Harris, Fri May 25 02:21:55 2018 -0700 : 05
+0368d9aff26e04e0fd9eff63885e52b1d371818c - Simon Harris, Fri May 25 02:08:41 2018 -0700 : 05
+941a75c71287c4189ada4807fadad4686d6440fa - Simon Harris, Fri May 25 00:36:49 2018 -0700 : adjusting 03 again
+fb94442ca16b64f4e89e06b69766571283070815 - Simon Harris, Fri May 25 00:31:48 2018 -0700 : making abs work akin to abs()
+1a5b5a3669f402ca9ced238d2208bad2124433c2 - Simon Harris, Fri May 25 00:29:17 2018 -0700 : accounting for minint
+f783a16bf4e1812fdfedfd7f8bd3b0fef2855f0d - Simon Harris, Fri May 25 00:27:13 2018 -0700 : 03 changes
+17ea6559f32611a70b4e85537e775ec08c6a3b76 - Simon Harris, Fri May 25 00:19:38 2018 -0700 : 03 04
+b6c3c6d6fba07a63d06239ba8438a63286d3533e - Simon Harris, Fri May 25 00:07:02 2018 -0700 : 01 02
+75c096cecea37999dfdcf93fac3687f78281d43d - Simon Harris, Thu May 24 23:19:31 2018 -0700 : maybe I need to include unistd. :3 02
+9930429da9c47cc8e4764d738d4468988235eb8c - Simon Harris, Thu May 24 23:18:24 2018 -0700 : 02 Learning how to define properly ^^;
+acf664e1c1143f35e4215b5cc7391bda70db0861 - Simon Harris, Thu May 24 23:07:39 2018 -0700 : 00-02 Lets see what towel thinks. ^^
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/t0/shs4grbn6jx7xrhmy9mnjz540000gp/T/tmprAb4bw/user
+total 16
+-rw-r--r--  1 deepthought  deepthought  5941 May 26 14:40 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 May 26 14:40 ex00
+drwxr-xr-x  3 deepthought  deepthought   102 May 26 14:40 ex01
+drwxr-xr-x  3 deepthought  deepthought   102 May 26 14:40 ex02
+drwxr-xr-x  3 deepthought  deepthought   102 May 26 14:40 ex03
+drwxr-xr-x  3 deepthought  deepthought   102 May 26 14:40 ex04
+drwxr-xr-x  4 deepthought  deepthought   136 May 26 14:40 ex05
+drwxr-xr-x  4 deepthought  deepthought   136 May 26 14:40 ex06
+
+/var/folders/t0/shs4grbn6jx7xrhmy9mnjz540000gp/T/tmprAb4bw/user/ex00:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2134 May 26 14:40 ft_split_whitespaces.c
+
+/var/folders/t0/shs4grbn6jx7xrhmy9mnjz540000gp/T/tmprAb4bw/user/ex01:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1073 May 26 14:40 ft.h
+
+/var/folders/t0/shs4grbn6jx7xrhmy9mnjz540000gp/T/tmprAb4bw/user/ex02:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1178 May 26 14:40 ft_boolean.h
+
+/var/folders/t0/shs4grbn6jx7xrhmy9mnjz540000gp/T/tmprAb4bw/user/ex03:
+total 8
+-rw-r--r--  1 deepthought  deepthought  972 May 26 14:40 ft_abs.h
+
+/var/folders/t0/shs4grbn6jx7xrhmy9mnjz540000gp/T/tmprAb4bw/user/ex04:
+total 8
+-rw-r--r--  1 deepthought  deepthought  995 May 26 14:40 ft_point.h
+
+/var/folders/t0/shs4grbn6jx7xrhmy9mnjz540000gp/T/tmprAb4bw/user/ex05:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1547 May 26 14:40 ft_param_to_tab.c
+-rw-r--r--  1 deepthought  deepthought  1093 May 26 14:40 ft_stock_par.h
+
+/var/folders/t0/shs4grbn6jx7xrhmy9mnjz540000gp/T/tmprAb4bw/user/ex06:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1709 May 26 14:40 ft_show_tab.c
+-rw-r--r--  1 deepthought  deepthought  1120 May 26 14:40 ft_stock_par.h
+
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_split_whitespaces.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_split_whitespaces.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./li078imgw8kjb4ubiosghgab "                 "
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./xmlztvdstk3o1o0hf7cg9c3r "          "
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./qh4jfxlsk5mlxtjowoi0tx1x "         1dnxHAJEeg              "
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./99b2agkofjhwj4ne6b5tcuko "         2atkWhL7l               "
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./na8jtrzw6sq9hlcho54yqc3n "         c3IGuieqO               "
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./cylcqwk4b5bahx6exy8kl7wp "tQ1H3             d3iFX9B                 rhExyJo6vD2l            3               Cg"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./6zw3aplhbfk3r6kjdjqdxhxm "yzqF              WnbXNDi                 4n8TDfF                 fmV6b7C                 0J1GDkM8j               V"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./tkymdeefsv5plhtocylw1ry2 "WISvoLq0a9X8              LPXv            Oqg"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./jwt1k4xieuzn17evfr09u98o "3                 7               6               Zngw9Mhl                ei              FUqopX                  jucECMn5X9fG"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+$> /usr/bin/norminette  ft.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlen.c ft_swap.c ft_strcmp.c ft_putstr.c main.c ft_putchar.c -o user_exe 
+ft_putchar.c:4:6: error: conflicting types for 'ft_putchar'
+void    ft_putchar(char c)
+        ^
+./ft.h:19:6: note: previous declaration is here
+int             ft_putchar(char c);
+                ^
+1 error generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= ex02 =========================================================================
+$> /usr/bin/norminette  ft_boolean.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_boolean.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./fnehyf0t6vh1vaaivd2hgvyr un
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./iw81issr22650715s3i9m7bx un deux
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./3njhz6b1k4d7ypsbvty2s6pd un deux trois
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./8qmsdnxu5gg4jtd2cglsudev un deux trois quatre
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette  ft_abs.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./hy7creknaruncigw7u3ypfca "823168477" "1389358578" "660403128"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./kskogsg3mazi8b115j8ykd8h "430244328" "-1008124501" "1983330564"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./ku1fv5gtujnuw8kekpx7j84j "-1371146888" "-632089426" "-2058468525"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./j1badx9jf73ctjldqvoo3dse "18204791" "-188056468" "2121635048"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./vpkhm0iw3gp1ko0lcpaponfl "1596525072" "1850579219" "-863525046"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./qo80ct47qoz2b2x35e0dljmw "-2025697734" "-648854617" "-1228378837"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./mzladjbr2ydgibht17pfru07 "-777004919" "-1852448473" "-1972307252"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./9qvafuxhz6ct5vwqi49yu6zx "-463200136" "1596334096" "1395337639"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./pma5vzf7ltl5s7vwzz0a1lgy "1667306888" "2097147237" "-1471801506"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex04 =========================================================================
+$> /usr/bin/norminette  ft_point.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_point.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./rw172j7vwkieg1c4gtpcyfqt
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex05 =========================================================================
+$> /usr/bin/norminette  ft_param_to_tab.c ft_stock_par.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_param_to_tab.c ft_split_whitespaces.c ft_show_tab.c main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./4kal4coayiunghwr8f74uygk 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./7vm5fbhle2o3u4sft2uu8e8c "rB147OwKm"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./46ve3j4v8hjswx9hdyeh3us1 "rKiVdpwaSQh"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./3pm56mov9hbse31omim3sqyw "0Qi Uu9I r31z CrGX XOZ Te2qwhOVv41p zD7RZ fV"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./ot7pku0cvyyizulaspvcdnst "ShRGaj xpVSWshtQ dPYi9rx HpjADs z a3Rlk bPmWzGYgeJAw uKhOlgrCNpd"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./sdbs097arqccng2sygbnkic2 "nQPa7hvOBeY6" "3L" "5aol6bNis" "DMaqKt8" "ZBXmh" "Ek" "Jv7kgHdh" "r" "IyYqDZSMxB87" "iPy" "UNgRI"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./ig4zxpnshlxs6v3lr2b5cuca "XSefWOl7YMV" "zKlxpQZ5" "hD" "qw" "6BFecowZJy" "h" "Aec9qzV" "k" "cxmnOor7X" "z9uWPJ" "9" "DIWnwHT" "VOdyIoEfrhY" "bhi8QztJKc0H" "B" "v"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./ewnypcqwdy8838dfhndgay6d "5V p4gPiuRFQ0 e6cBYKh" "S6XcNQLo 9 y71bzOxaRq U" "LJ0FjG U3RWI fE2Wsw" "VxQu0oaNyF83 Czt09N3BW" "VsUvbz2xi9 tA9KslWNP cvLZ" "1l3UKfL" "HgFaIeBAEyJt xE ZAPI" "jRegx18" "Nqkad JDlAgSLMWiTq wOiZ 7uEkinB0jd9X" "47 w8NUzQeCdq5E jmUtcI7YQ" "E" "FW pnbIivUm8" "hqML5QHIaznN BR8 uf" "Bf4SOpEgc IqAD" "skl1V pg6VdrHiOl3" "H2Co yQ4n0 h6e ebInLZRm6"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./t1c03mz38f0xak2qjnkaqugi "5atQNdqgm KZ fypr pSfPo" "i9dCtnG3ukM AosSyTzhnwN urpBZg8Q7y j1D" "fe t vr9kFIUd7eS" "YMOmjPi" "BPt 9gLv vP8TbLSuRGX U3" "jXAQTnNp zaIcBJ 26DIxwGvp" "QpG GaNK3t" "QHJ 01GNVlmyPR" "D7g91pM4 BeLMIgH 4" "niq 5VOPb fXU5hj1k r2aWM5HN9" "WY3" "gMSuLP 49 SB9W wUnSgap" "MP0R1 znQSEde75js uo7xLH9mt" "EkZRqI5M" "4RixuhvpIM 0" "RJ38qSMAKH"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 30
+
+= ex06 =========================================================================
+$> /usr/bin/norminette  ft_stock_par.h ft_show_tab.c | grep -E '^(Error|Warning)'
+Error (line 17): declaration of ft_show_tab forbidden in .c
+Error (line 18): declaration of ft_putstr forbidden in .c
+Error (line 19): declaration of ft_putnbr forbidden in .c
+
+Norme check FAILED
+Grade: 0
+
+= Final grade: 5 ===============================================================

@@ -1,0 +1,460 @@
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: KO | ex06: OK | ex07: OK | ex08: Nothing turned in | ex09: Nothing turned in | ex10: Nothing turned in | ex11: Nothing turned in | ex12: Nothing turned in | ex13: Nothing turned in | ex14: Nothing turned in | ex15: Nothing turned in | ex16: Nothing turned in | ex17: Nothing turned in
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r8p8.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Thu May 31 01:22:29 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_11/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user log --pretty='%H - %an, %ad : %s'
+62a098e9ab74f8293624fa4d3d04e7348b6898a2 - Simon Harris, Wed May 30 22:50:27 2018 -0700 : null -> 0 07
+504594175b3b3690b6da6118179aba16356b2ff4 - Simon Harris, Wed May 30 22:49:59 2018 -0700 : 07 we're so close!
+993e3c1390258357cb99035c1087bb2ef9fddcd3 - Simon Harris, Wed May 30 22:41:40 2018 -0700 : 07 changing evaluator
+0dfeaa81c121aaef2bc33a9906e94607f07f446b - Simon Harris, Wed May 30 22:33:34 2018 -0700 : 07
+20788cf2785dab2644d1c9ae1eba041356f77abc - Simon Harris, Wed May 30 22:32:28 2018 -0700 : 07
+8972f6659b938a3ba259cd4c1c5a245adbe43e96 - Simon Harris, Wed May 30 22:31:27 2018 -0700 : 07
+ff95e96b152bc7815ef2838889d5f26ca109afde - Simon Harris, Wed May 30 22:30:40 2018 -0700 : 07 null
+f6f6a42ca507b9bdcf78890ab60321086ff82b20 - Simon Harris, Wed May 30 22:30:16 2018 -0700 : 07 fix
+28a9d301c58ea9997e21b2ab4f7709576bc15483 - Simon Harris, Wed May 30 22:29:47 2018 -0700 : 07
+4d76508044ddcc1cf9a9de8675957330c0751618 - Simon Harris, Wed May 30 22:29:09 2018 -0700 : 07
+630236c525d2e965cbe183af37bde0d10d6b9637 - Simon Harris, Wed May 30 22:28:34 2018 -0700 : small correction
+86ee28204e3f508e3501e5ca5da14743f5495a82 - Simon Harris, Wed May 30 22:28:04 2018 -0700 : re-writing this
+a746f81ffa566e912985169782d8ff057f3c5e91 - Simon Harris, Wed May 30 22:23:47 2018 -0700 : testing someone's code to see how this is supposed to work.
+db16d2e72304309b1788874f6d39454b2ccf5d01 - Simon Harris, Wed May 30 22:21:04 2018 -0700 : 07
+0001f3e15e865ab36e42f2ce51e376919f343d6e - Simon Harris, Wed May 30 22:20:35 2018 -0700 : churr churr! 07
+214227ac18f44a377f1cfc5f01f3389809bfd560 - Simon Harris, Wed May 30 22:20:02 2018 -0700 : rrrrhhh! 07
+30a193e61eef9be86c809e7e81bc96cb9bf79cdf - Simon Harris, Wed May 30 22:18:42 2018 -0700 : maybe?
+e93e7769e4b7aa653a14c821514de6a4a88947c1 - Simon Harris, Wed May 30 22:16:02 2018 -0700 : 07 whoops!
+d500ed69f9d99b91b2b5798cca3084aa2cb5fc12 - Simon Harris, Wed May 30 22:15:43 2018 -0700 : 07 yet another plan!
+2d1cb3684fc5bfcfbe3bb5f99ad3d71a713d0527 - Simon Harris, Wed May 30 22:14:41 2018 -0700 : 07 come on i'm running out of ideas!!
+bf766c50a63912d93bff1cbde9b02b359a25ff1f - Simon Harris, Wed May 30 22:13:48 2018 -0700 : stackoverflow saves the day? 07
+1e23ecd574bb238931454383162a28e632416873 - Simon Harris, Wed May 30 22:12:28 2018 -0700 : MAybe?! 07
+efcb4d5b61713229b40d20d2e5867561b88c49de - Simon Harris, Wed May 30 22:11:34 2018 -0700 : 07 another method!
+ceab8620e2b59ab7496acd11922a5cea9414e8c4 - Simon Harris, Wed May 30 22:10:36 2018 -0700 : 07 into another adventure of bugs!
+1ef53755a8b8896622ebebf994e9f7a98a9acd51 - Simon Harris, Wed May 30 22:10:06 2018 -0700 : 07????
+5bb67c025bcfc47e584e83db4656cc191f5b0c53 - Simon Harris, Wed May 30 22:09:27 2018 -0700 : 07 ???
+fca26a63e5bf280c23b2fa9fd02d4d9f62ea5f71 - Simon Harris, Wed May 30 22:08:59 2018 -0700 : 07 ??
+d24c446d24143996eeca17712036ee020f911965 - Simon Harris, Wed May 30 22:06:59 2018 -0700 : more exploration
+5b01a47a7a2e098718b44ab31240a9d2518fb49d - Simon Harris, Wed May 30 22:05:00 2018 -0700 : 07 discovering more returning null
+fc242d22e5ea6b12fedf9a444685d98fb16ad5db - Simon Harris, Wed May 30 22:02:26 2018 -0700 : 07 another experiment
+a2c88c2fd092e8a46402f53f9241c265643a452b - Simon Harris, Wed May 30 22:01:26 2018 -0700 : being weird with nulls
+140c2ba4ff44655e98d5ea676a53b29482982716 - Simon Harris, Wed May 30 21:58:25 2018 -0700 : 0
+5d3b56021e13b6450798f9379878789ab8c31199 - Simon Harris, Wed May 30 21:56:21 2018 -0700 : sub 07
+297986ae683786862981db0c4dd6ca44c67c824b - Simon Harris, Wed May 30 21:29:01 2018 -0700 : 06 fixes
+f9133d4e9b3fde2a8948a3b9fdaacaa7892eea72 - Simon Harris, Wed May 30 21:11:44 2018 -0700 : removing bad return 06
+35948a2974e26f8768ea6543020cd0b976e703d1 - Simon Harris, Wed May 30 21:10:45 2018 -0700 : found the sneaky hyphen 06
+5095f1a2c5e62f64da322e103fb32fdc42f4bd68 - Simon Harris, Wed May 30 21:09:32 2018 -0700 : 06 fixing header ref
+14ce17cf21a3a0bef97fe2e507cda0f1a227191a - Simon Harris, Wed May 30 21:08:45 2018 -0700 : ex06 submission
+a5cb821fcfbe1c9ca8d848bddb008228a52ae9c5 - Simon Harris, Wed May 30 21:07:38 2018 -0700 : 01 removing ft_create_elem protoype (redundant from .h file)
+a1e4811a4ddc13421b14054da83af06877d2e658 - Simon Harris, Wed May 30 20:48:10 2018 -0700 : 05 reverting back to when it worked, I understand the towel process now. ^^
+21c1a8e4ab3780173ff7a0f42fe99a458211a300 - Simon Harris, Wed May 30 20:46:34 2018 -0700 : 05 test2
+b6cc5b6cf29d139acd0572c6d50530b72f65a4cb - Simon Harris, Wed May 30 20:46:03 2018 -0700 : 05 experiment (Just before this it passed towel.)
+55ce68877fe19beecaa067a57ae1ac82ef400253 - Simon Harris, Wed May 30 20:41:53 2018 -0700 : reveting last 05
+6d3e00742f9cbc7dd811a8129e1f4778b5eb7d19 - Simon Harris, Wed May 30 20:41:21 2018 -0700 : 05 removing >= to >
+6bb59bedd19d3d59f35df42d089321fd47af6508 - Simon Harris, Wed May 30 20:40:40 2018 -0700 : 05 again
+3280e73b572e43dc4a27d151f0e38aa7815c5ca3 - Simon Harris, Wed May 30 20:39:54 2018 -0700 : more 05
+0a9f4afcc4b9344f2bbb85cb7cde9ea3242bd327 - Simon Harris, Wed May 30 20:38:49 2018 -0700 : 05 thought it was like this before???
+61a68fff7cc9c18cca269b1d9a55deecb1762c97 - Simon Harris, Wed May 30 20:37:50 2018 -0700 : Merge branch 'master' of vgs.42.us.org:intra/2018/activities/piscine_c_day_11/sharris
+9caf39003d1121d18c9cf4ca45053e42efd1e49d - Simon Harris, Wed May 30 20:37:37 2018 -0700 : 05 fix
+b123f482314ea6a7b1dbec382e41182887e2ece1 - Simon Harris, Wed May 30 20:33:48 2018 -0700 : 05 no towel error, but this might make more sense.
+c2597e53c066e2ea6563137d53281922448a1842 - Simon Harris, Wed May 30 20:27:23 2018 -0700 : 05
+9100c560364c72ad832b0044259fcbeb18ff7efe - Simon Harris, Wed May 30 20:25:52 2018 -0700 : 05
+8bb0d2614b0478d34787da8cdd54a5ce87582049 - Simon Harris, Wed May 30 20:24:40 2018 -0700 : 05 tweaks, at it again!
+1c5dd05f0673341fb44dfd3b11c1b969a30ef37f - Simon Harris, Wed May 30 04:40:11 2018 -0700 : 05 moaaar
+3f258ed61ffba3b3827df246e7270a012a5867a4 - Simon Harris, Wed May 30 04:39:21 2018 -0700 : one day! 05
+584e85a9bb6b177ff8037db9ec8481d05181ee58 - Simon Harris, Wed May 30 04:38:10 2018 -0700 : more 05
+d91ca271b1e774f3d167f4d18fb527838153741c - Simon Harris, Wed May 30 04:34:54 2018 -0700 : 05 another smol change inc. 0
+10792a60217daad8b2e6fca4cdf7621589c224d5 - Simon Harris, Wed May 30 04:34:00 2018 -0700 : 05 testing small change
+eaaa9d5fa7653c9331f3871c151475be927c3bae - Simon Harris, Wed May 30 04:33:22 2018 -0700 : 05 testing
+04dc45dadcf1a2d97f3fa2914a03450c8b384520 - Simon Harris, Wed May 30 04:30:36 2018 -0700 : 05 mallocing variable
+6928f9933253963a9578e30b3abaa1558e0b3fa6 - Simon Harris, Wed May 30 04:23:24 2018 -0700 : 05 submission
+4a82fa0db66d57b336f24a03a33f3de9e75065fd - Simon Harris, Wed May 30 04:04:35 2018 -0700 : 04 tweaks
+c5141c3950a052898a9252821e3e55edcd21b993 - Simon Harris, Wed May 30 04:03:24 2018 -0700 : subbing ex04
+3ed0777e82f0da7541bdf2e9f85cd82702441698 - Simon Harris, Wed May 30 04:00:10 2018 -0700 : 03 submission
+3b53f2abe72ecde0bcc1525ba4f8dc6a3e98c599 - Simon Harris, Wed May 30 03:51:36 2018 -0700 : 01 go go to!
+00848331b72cd53fd8e5a12454d51c9206257a6a - Simon Harris, Wed May 30 03:50:44 2018 -0700 : how to 01?!
+743c449253ffb657348f04fb7ee9954e1ddd2e1a - Simon Harris, Wed May 30 03:47:30 2018 -0700 : 01 02 update
+1e236b4e2d43b3f04a3d24a506ae680433159d00 - Simon Harris, Wed May 30 03:44:37 2018 -0700 : 02 03
+915e0b0af5224fd0846229be76880617d1a7f670 - Simon Harris, Wed May 30 00:58:43 2018 -0700 : 01 correction
+ff7ee7baa49535eec8d4ec6fc40e425d4c84bfde - Simon Harris, Wed May 30 00:34:42 2018 -0700 : 01 test
+a41979f5532c61f6f0644215d066ef5cb83a20dd - Simon Harris, Wed May 30 00:31:02 2018 -0700 : 01 tweak
+e98b11cf96452a525e7fca7b715d44a063dcbfa9 - Simon Harris, Wed May 30 00:29:55 2018 -0700 : 01
+84f5d55d2fcd1289ba7f38a090811c711f9fa360 - Simon Harris, Wed May 30 00:29:32 2018 -0700 : another test
+9d58ee46891c7bee72496454e64865b2fefd1a94 - Simon Harris, Wed May 30 00:12:12 2018 -0700 : 01 corrections
+95ddd80c4dd44f56494c72bfab05709dbdb4f00d - Simon Harris, Wed May 30 00:10:25 2018 -0700 : 01
+af65404bafbfd3f533453db5c019c3ed159c5632 - Simon Harris, Wed May 30 00:06:48 2018 -0700 : adding headers 01
+e9529bf94ba9bad5fd0a1d0f6c3d7107e1a96175 - Simon Harris, Wed May 30 00:05:55 2018 -0700 : 01 sub
+f01ad82ea2dc439142132b67b78aa4d1c203a736 - Simon Harris, Tue May 29 23:41:40 2018 -0700 : 00 resub
+a4d4a4b06829747c6a8dbe7bdf51a551d38c9810 - Simon Harris, Tue May 29 23:41:12 2018 -0700 : ex00 initial sub
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user
+total 40
+-rw-r--r--  1 deepthought  deepthought  19386 May 31 01:22 __GIT_HISTORY
+drwxr-xr-x  4 deepthought  deepthought    136 May 31 01:22 ex00
+drwxr-xr-x  4 deepthought  deepthought    136 May 31 01:22 ex01
+drwxr-xr-x  4 deepthought  deepthought    136 May 31 01:22 ex02
+drwxr-xr-x  4 deepthought  deepthought    136 May 31 01:22 ex03
+drwxr-xr-x  4 deepthought  deepthought    136 May 31 01:22 ex04
+drwxr-xr-x  4 deepthought  deepthought    136 May 31 01:22 ex05
+drwxr-xr-x  4 deepthought  deepthought    136 May 31 01:22 ex06
+drwxr-xr-x  4 deepthought  deepthought    136 May 31 01:22 ex07
+
+/var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user/ex00:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1092 May 31 01:22 ft_create_elem.c
+-rw-r--r--  1 deepthought  deepthought  1012 May 31 01:22 ft_list.h
+
+/var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user/ex01:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1051 May 31 01:22 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  1156 May 31 01:22 ft_list_push_back.c
+
+/var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user/ex02:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1051 May 31 01:22 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  1084 May 31 01:22 ft_list_push_front.c
+
+/var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user/ex03:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1051 May 31 01:22 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  1136 May 31 01:22 ft_list_size.c
+
+/var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user/ex04:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1051 May 31 01:22 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  1058 May 31 01:22 ft_list_last.c
+
+/var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user/ex05:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1051 May 31 01:22 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  1182 May 31 01:22 ft_list_push_params.c
+
+/var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user/ex06:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1051 May 31 01:22 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  1134 May 31 01:22 ft_list_clear.c
+
+/var/folders/1v/7zpsn2tj11v2pb01s0__vj6r0000gp/T/tmpuHM0UQ/user/ex07:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1051 May 31 01:22 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  1173 May 31 01:22 ft_list_at.c
+
+= ex00 =========================================================================
+$> /usr/bin/norminette  ft_list.h ft_create_elem.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_create_elem.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./fh3tx32isxxh1jpv22hn10mv "WMD8zQhcdEo" "T0" "H" "85PK" "dN" "gEIN7L" "tvni3" "z80sjK" "1vqNUXZ9g" "e54hx3wHr" "kiVh5H8UCQ" "IisZq43mH2c0" "QsUnVg" "NULL"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+$> /usr/bin/norminette  ft_list_push_back.c ft_list.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_list_push_back.c ft_create_elem.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./f2wo7xms3xdiocr4ojgo7sg1 "PAv6nolf" "KAs9bz" "HuFPDBVZlIc" "381" "vnpo7" "RTahMs" "dW" "2WJOkwUKrF" "ciDaSrZgFWYf" "Z" "8KRdV63cm" "WlEi7SMIu8" "1" "1sTIp" "9Yt" "ESyF" "cyubgz8RIAhV" "4GS29wUBpb" "XgAY5y" "NULL"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 4
+
+= ex02 =========================================================================
+$> /usr/bin/norminette  ft_list_push_front.c ft_list.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_list_push_front.c ft_create_elem.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./49lypovq6ky249apxdb7er1p "XN6k" "p732PU" "jQTHIEi4" "JU" "6" "ADJ" "o" "z9iq" "SLDcltmwI" "6p" "vE0oNbxMwcfz" "rQYduX" "5Ns8Xkz" "qmiuYocas" "QJ" "Ti9" "fmQkC5gEG8KW" "3FTI0guUt" "zpkiBu1" "1p0" "Y7Pxtn" "5FNIpE6GV" "uBo6DjSC" "NULL"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 4
+
+= ex03 =========================================================================
+$> /usr/bin/norminette  ft_list_size.c ft_list.h | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_list_size.c main.c ft_create_elem.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./n5q6domsnkks1kuh3rvek3z9 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./xdoat8qxbn2e5toxltod521j "QHTGr"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./qkf80exywlf6zrz9b36mh6vo "NULL"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./gh5yj1yigd33mjym2cxyovy2 "NULL" "NULL" "NULL" "NULL"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./6wjvqt93zkcxxy037e2xi8zy "NULL" "NULL" "NULL" "v0ozN9Bihu3C" "r" "SjmDU" "Do7WXu" "NULL" "5kQudxS4lm" "uM3JWC4vR" "mrA3hUCeb" "LXtBu"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./q0d4cdodxly9pb5z3j63er7f "NULL" "NULL" "7DOpsEt" "NULL" "oXi0sQEu" "dDAv"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./okksca3k4e59i0y6wymn5wv6 "knZcA" "NULL" "hOpcd" "3aPJ0eFUM" "NULL" "d0xyo7TKuJD" "EkeAyWv" "NULL" "NULL" "54ec" "NULL"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./zbk3ew1cad76w1kf24bcoyep "Lf20yX7bsmx" "g" "NULL" "NULL" "NULL" "h" "OUlTK" "WGQab8tv" "sZgS" "NULL" "Bua4hOoYk" "K89zq"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./88dszcncdt9tjzz5duzsvzkm "NULL" "wm" "NULL" "NULL"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 4
+
+= ex04 =========================================================================
+$> /usr/bin/norminette  ft_list.h ft_list_last.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_create_elem.c ft_list_last.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./f5n1zycqr147mx00983uj6ob "KDl2dSIkbgRcnX84x"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./tclm78nn8s831e8onlyt0nfn "NULL"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./4zez9ck5abyzbok58dzoleoz "NULL" "NULL" "NULL" "NULL" "NULL" "NULL" "NULL" "NULL" "NULL"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./3n84jmsffi3czspbawv2l8ew "NULL" "3WJC4FG" "u" "ka60uLIPdQH" "NULL" "NULL" "NULL" "wc2bKEV" "NULL" "NULL" "v2jxt6PJ" "NULL" "DBH37hE" "odsFXY4" "Re4tJ3xD"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./w8h476zbiry5cwaazm1jr3qh "h1LsRx" "Px" "7fXVG" "NULL" "3nuOavBmF" "2Fb6nyvOMG" "NULL" "Dn" "abtIQ" "HU62yn"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./8ysjt2qup37b9ey7nbccn9wz "NULL" "NULL" "NULL" "NULL" "1A6IPoxQJN" "J8FvdSTUhNMu" "NULL" "v6V1WEO" "NULL" "4v8rYV3j" "hdL2V4AaC" "3JX" "NULL"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./d36kyjnortauk140kb55z6qn "lK" "NULL" "NULL" "BJX" "NULL" "6" "NULL" "NULL" "NULL" "UH0cd6nNTF" "PX5b" "Qm3Cyl"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./ekmr5bv3h6dqp8552vusemhs "P82eYdc3f" "qzKxWJcb6o3" "NULL" "NULL"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./aqn8amr9kw0hohr6a12z566w "NULL" "NULL" "nFvrg" "vfAhWuE01M6K"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 4
+
+= ex05 =========================================================================
+$> /usr/bin/norminette  ft_list.h ft_list_push_params.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_create_elem.c ft_list_push_params.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./9jd51sk7bf2u7rnge6n8ks4i 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1   2018-05-31 01:22:51.000000000 -0700$
++++ test1.output        2018-05-31 01:22:51.000000000 -0700$
+@@ -1 +0,0 @@$
+-=> ./9jd51sk7bf2u7rnge6n8ks4i$
+
+Diff KO :(
+Grade: 0
+
+= ex06 =========================================================================
+$> /usr/bin/norminette  ft_list.h ft_list_clear.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_create_elem.c ft_list_clear.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./kr1enhdm5m1uh8snnfzm7pr2 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./pfp0m7k5cdaiu0tgox0jflnf "yuJNzXnH2CMRbY6o"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./0k41ygpt07kdjcya815espzy "MFtVrKP" "avoMpR1sr" "Da0nf" "Nk3iM0DOyQ"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./xzteygt8hkcydji3syc9uwuk "eCYXNvEq2Qi9" "n43s2WB0QfL" "FtBXZ4MJ" "5E3juHo"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./zhvruuhmjoykh4wh6oyg91wn "aoK" "h8" "y5RSr" "X3VYP2" "P" "afyIoF6Eed" "mSH8FZ2" "FdY0N" "oxJjAdCD" "1" "uQyi20eqJcxN" "CoE37Z4sb" "VvLIi3Xby"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./x6uub1gkl7hixeu262m2dudt "HLq" "GnHDTZmF" "CxnZFN" "Fmo" "yQ6Zbnr" "vP5X9DxM1W" "56hu7d8v" "x" "4Qji5hArP" "L5aVPQFR" "NXp6WD8TJPH"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./alex68x5kv9ke3atk9oofbuc "fr9dqIp" "yY52I1j4xCbL" "DAJ" "ktr" "Gd1r0OHfgIw" "kmptjMTr9c5B"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./y1smupubl4q81yubt71b6id6 "tkF1DLr" "BCYm843fg2uk" "Hg3YTxM" "1es" "WmFakl2qT0" "HFrBEK51D" "Hc0z32sT9G" "r" "vjUfbXoSI" "cOe" "c9Ljke8"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./xmlswnagv89gjhm0k1gpt95v "bJBdFmQWhl" "J" "dCc216h0rmWZ" "0AWE6VTYp8fO" "c1lVkpbvJPx" "J4"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 4
+
+= ex07 =========================================================================
+$> /usr/bin/norminette  ft_list.h ft_list_at.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_create_elem.c ft_list_at.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./mfjmen4h4az59fobfovbcvp8 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./5kucu9t1wju99hovm895v7o9 "7pX5"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./dwbspqoxhs0n5ie5kvt3eoa6 "MmzikpR" "lsMfb4" "gow" "dGti"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./xlrudn4o7e8li1ns9ygmw8x1 "NWEleQ" "7GSXhr" "u3B" "V7hmL3TARSi" "dXkA6fK5Ueb" "RMN6cxgpnoFC"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./os7ott8t8p683ajbq8jua2d2 "Wl6yk3tBV0H" "o" "GkxjJBaUH7m" "dpUgW" "wobCXnkGdOV" "QfrGeuxhXS" "Ot9ifCqjd5" "5qO0o9ywvzA" "hEUy70R5BvFe" "V3Mpl9CW" "V16wCFbDEX52" "5Jh"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./p1q37vvdwl0dp2td926uiuov "Jv" "v5Yx" "Iz5OgXm7bK0" "TsZ8fm7NGY" "U2ywpbiIHQ34" "U" "ftwYjZRcxkbV" "9v" "rGwa"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./km1jown87jlg2na2nljfj34j "XMqfp48Ke" "Whl" "xq2eu" "YXqk" "jot7Rrc5i" "2" "eOHNsy89GlkD" "G2lHD" "hg1RiA" "ZShF25wNk" "RXYyZKH3eN9" "r4K7SlnpAOT" "hzkJ2" "mxUq" "bdiLWx5QrNmM" "V1K"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./r1fa681725xh30vj5ctvw37s "RD7" "VHR6Tfmiq" "YcPtHU" "1rex5" "hZ2XP" "KqW8" "OA" "Q3fko1gw2Tp" "YMsjmbzAZvJ" "QV" "zaMf1sJHKQN" "7ws9rGDCZUA" "8LqyiGacK5o" "8T"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./17ozcj86e8c90m1k0ig66ntk "D" "M" "1VaeMuS4nm" "NTR" "koCZAHiNud" "d" "LviSGBcu" "nrfZITtg" "n51zKjPVCvFU" "3kQtNojqgGP" "qKakm6" "YAk3Vm1" "pHloAeWFB3N" "FXEtdavHNhCV" "FoBd" "DWqmywnhFN9"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 4
+
+= ex08 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex09 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex10 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex11 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex12 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex13 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex14 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex15 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex16 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex17 =========================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 21 ==============================================================

@@ -1,0 +1,208 @@
+ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: Timeout | ex07: Timeout | ex08: Norme error | ex09: Nothing turned in
+
+
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r8p10.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Sun May 20 15:48:04 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: intra/2018/activities/piscine_c_day_04/sharris
+
+= Git history ==================================================================
+$> git -C /var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user log --pretty='%H - %an, %ad : %s'
+2c4378e6bd255c2eed55486540431f3c9ff398f5 - Simon Harris, Sat May 19 22:43:45 2018 -0700 : adjusting x08
+024545ca928096c37be7a4b4ef8e6035d297ba9d - Simon Harris, Sat May 19 22:36:20 2018 -0700 : norm check 00-07, so confused on how to start 8
+4bd9342f2b7e0b0c70cd04e1b45d6e4db377d70b - Simon Harris, Sat May 19 22:09:29 2018 -0700 : changing email in header
+a92ef054ec347622685cb10fbd27c62c21f90e3d - Simon Harris, Sat May 19 21:54:00 2018 -0700 : adjusting 07 again, 2>2
+f8635d6255201f78f81601c00282f9e4c39130dc - Simon Harris, Sat May 19 21:42:00 2018 -0700 : adjusting 07
+c4ea86adb46609819f431db962be2ac12ea000f4 - Simon Harris, Sat May 19 21:35:55 2018 -0700 : fixing prime logic to account for 2
+83189f3640dab1844dc577d552d58273f7c56181 - Simon Harris, Sat May 19 21:18:10 2018 -0700 : submitting 07
+8bb7b3e6d131d386cdcd8bf03d5b9626328eebcc - Simon Harris, Sat May 19 18:50:31 2018 -0700 : Format adjustment for norm, 06
+f35219a57471ff752afd7e844162500d0a08d0ea - Simon Harris, Sat May 19 18:46:35 2018 -0700 : 05 header change; 06 correction
+57b06f42276dd0f2ac7641139abf7441a142584f - Simon Harris, Sat May 19 13:35:38 2018 -0700 : submitting 05, passed norm
+6b722638a6ee8a8f11824476b6058daf15df3b03 - Simon Harris, Sat May 19 05:24:32 2018 -0700 : passing norm check for 04
+14e412fc7f230d2106d87958735b74ee417af169 - Simon Harris, Sat May 19 05:23:58 2018 -0700 : removing debug code
+765914b4f43cbb02859b195b5bb76ad69fa452b7 - Simon Harris, Sat May 19 05:23:22 2018 -0700 : fixed 04 so that fibonachi(1) == 1
+936d4be0a146b55496de2af56cbb9fbdceec9a3d - Simon Harris, Sat May 19 05:19:11 2018 -0700 : submitting 03, 04
+c1f0c74d099a80a7912d3a6300d5a935c6fc6d43 - Simon Harris, Sat May 19 04:31:09 2018 -0700 : Submitting 03, passed norm
+ec0823bc632e0767c86be6548cb9ea7c23e81b23 - Simon Harris, Sat May 19 04:19:31 2018 -0700 : pushing 02
+5886a7d48fbf011fb0623ddbf59425c9ca624b20 - Simon Harris, Sat May 19 04:02:15 2018 -0700 : sneaky tab in 00
+9a162cfac8951da3f2e75be8d425e56131e6b8d8 - Simon Harris, Sat May 19 04:00:53 2018 -0700 : making norm pass 00 again
+cb6ce3ba9248f212b6524406014b16f0fe9975dc - Simon Harris, Sat May 19 03:59:35 2018 -0700 : making 00 iterative and 01 recursive
+9f278329b6fedee7c9c6a0656612d7bf99ab5232 - Simon Harris, Sat May 19 03:42:50 2018 -0700 : conforming to the norm 00 01
+8f7a10f76e78dbb33269bbd18f66e37ad7e5608d - Simon Harris, Sat May 19 03:38:23 2018 -0700 : fixing type
+0ff44d577b7a47683d2fb6332f9c73bea5aff943 - Simon Harris, Sat May 19 03:37:19 2018 -0700 : renamed 01 fuctions
+6627f2d6b62c3829f973f3f7c882d01fbad02063 - Simon Harris, Sat May 19 03:36:31 2018 -0700 : reupdating 00 01
+4a100410094f5c9c7fd505a9782648df2535b8bf - Simon Harris, Sat May 19 03:34:24 2018 -0700 : updating recursive
+38ada4e1ece7481cbc8a8a9717d7674eacd09575 - Simon Harris, Sat May 19 03:34:03 2018 -0700 : starting off the night
+
+= Collected files ==========================================
+$> ls -lAR /var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user
+total 16
+-rw-r--r--  1 deepthought  deepthought  7092 May 20 15:48 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 May 20 15:48 ex00
+drwxr-xr-x  3 deepthought  deepthought   102 May 20 15:48 ex01
+drwxr-xr-x  3 deepthought  deepthought   102 May 20 15:48 ex02
+drwxr-xr-x  3 deepthought  deepthought   102 May 20 15:48 ex03
+drwxr-xr-x  3 deepthought  deepthought   102 May 20 15:48 ex04
+drwxr-xr-x  3 deepthought  deepthought   102 May 20 15:48 ex05
+drwxr-xr-x  3 deepthought  deepthought   102 May 20 15:48 ex06
+drwxr-xr-x  3 deepthought  deepthought   102 May 20 15:48 ex07
+drwxr-xr-x  3 deepthought  deepthought   102 May 20 15:48 ex08
+
+/var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user/ex00:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1128 May 20 15:48 ft_iterative_factorial.c
+
+/var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user/ex01:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1084 May 20 15:48 ft_recursive_factorial.c
+
+/var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user/ex02:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1097 May 20 15:48 ft_iterative_power.c
+
+/var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user/ex03:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1098 May 20 15:48 ft_recursive_power.c
+
+/var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user/ex04:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1119 May 20 15:48 ft_fibonacci.c
+
+/var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user/ex05:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1091 May 20 15:48 ft_sqrt.c
+
+/var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user/ex06:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1136 May 20 15:48 ft_is_prime.c
+
+/var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user/ex07:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1324 May 20 15:48 ft_find_next_prime.c
+
+/var/folders/1c/28t358zs0fx610qdb3kppcsh0000gp/T/tmpewM4e9/user/ex08:
+total 8
+-rw-r--r--  1 deepthought  deepthought  893 May 20 15:48 ft_eight_queens_puzzle.c
+
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_iterative_factorial.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putchar.c ft_iterative_factorial.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./hlmwtbal05stli202zs6sol7
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_recursive_factorial.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putchar.c ft_recursive_factorial.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./2bbdwn1s9gou177iwmdkqric
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_iterative_power.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_iterative_power.c main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./t8yl6dzvzin0s08sap7ou5ja
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_recursive_power.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_recursive_power.c main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./xpgwo99h964784b34c6lxm79
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_fibonacci.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_fibonacci.c main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./s6h0v2f9fo0m6v4l4h4ptpq8
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_sqrt.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putchar.c ft_sqrt.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./7qnbbr0w3vky329tfmu7wz1k
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex06 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_is_prime.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_is_prime.c main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./b05tc3v13ejv22ghapzlly5t
+Command './b05tc3v13ejv22ghapzlly5t' timed out after 10 seconds
+Grade: 0
+
+= ex07 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_find_next_prime.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_find_next_prime.c main.c ft_putchar.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./f3gvc7608vmjezxxbkaefps1
+Command './f3gvc7608vmjezxxbkaefps1' timed out after 10 seconds
+Grade: 0
+
+= ex08 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_eight_queens_puzzle.c | grep -E '^(Error|Warning)'
+Error: file must end with a single empty line
+Error (line 13): multiple empty lines
+
+Norme check FAILED
+Grade: 0
+
+= ex09 =========================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 60 ==============================================================
