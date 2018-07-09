@@ -1,0 +1,19 @@
+	"42 Header": {
+		"scope": "c",
+		"prefix": "stdheader",
+		"body": [
+			"/* ************************************************************************** */",
+			"/*                                                                            */",
+			"/*                                                        :::      ::::::::   */",
+			"/*   ft_putchar.c                                       :+:      :+:    :+:   */",
+			"/*                                                    +:+ +:+         +:+     */",
+			"/*   By: sharris <sharris@student.42.us.org>        +#+  +:+       +#+        */",
+			"/*                                                +#+#+#+#+#+   +#+           */",
+			"/*   Created: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND by sharris           #+#    #+#             */",
+			"/*   Updated: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND by sharris          ###   ########.fr       */",
+			"/*                                                                            */",
+			"/* ************************************************************************** */",
+		],
+		"description": "Log output to console"
+	}
+}
