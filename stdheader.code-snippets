@@ -1,6 +1,6 @@
 {
-"42 Header": {
-		"scope": "c",
+	"42 Header C": {
+		"scope": "c, cpp",
 		"prefix": "stdheader",
 		"body": [
 			"/* ************************************************************************** */",
@@ -14,6 +14,25 @@
 			"/*   Updated: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND by sharris          ###   ########.fr       */",
 			"/*                                                                            */",
 			"/* ************************************************************************** */",
+		],
+		"description": "Log output to console"
+	},
+
+	"42 Header": {
+		"scope": "makefile, shellscript",
+		"prefix": "stdheader",
+		"body": [
+			"# **************************************************************************** #",
+			"#                                                                              #",
+			"#                                                         :::      ::::::::    #",
+			"#    Makefile                                           :+:      :+:    :+:    #",
+			"#                                                     +:+ +:+         +:+      #",
+			"#    By: sharris <sharris@student.42.us.org>        +#+  +:+       +#+         #",
+			"#                                                 +#+#+#+#+#+   +#+            #",
+			"#    Created: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND by sharris           #+#    #+#              #",
+			"#    Updated: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND by sharris          ###   ########.fr        #",
+			"#                                                                              #",
+			"# **************************************************************************** #"
 		],
 		"description": "Log output to console"
 	}
